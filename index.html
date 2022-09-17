@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessNumber</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/dynamicStyles.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="./JS/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="#">GuessNumber</a></h1>
+    </header>
+
+    <main class="container">
+        <form id="form">
+            <label for="kick">Digite um número (0 - 10)</label>
+            <input 
+            type="number" 
+            id="kick" 
+            max="10"
+            min="0" 
+            placeholder="0">
+            <button type="submit">Jogar</button>
+        </form>
+
+        <section class="result-box result-box-default" id="result">
+            <h2 id="status">Adivinhe o número sorteado!</h2>
+            <span id="attempt">Tentativas: 0</span>
+        </section>
+
+        <button id="btn-restart">Jogar de novo</button>
+    </main>
+
+    <footer>
+        <p>&copy; GuessNumber, 2022 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
